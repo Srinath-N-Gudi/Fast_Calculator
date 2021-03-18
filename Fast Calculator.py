@@ -20,12 +20,6 @@ class b:
                     self.root.update()
                 except:
                     pass
-            if "sq." in value:
-                try:
-                    self.answer['text'] = sqr(int(value.replace("sq.", "").strip()))
-                    self.root.update()
-                except Exception as e:
-                    print("error: ", e)
 root = Tk()
 b(root)
 root.mainloop()
